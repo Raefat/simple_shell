@@ -1,5 +1,4 @@
 #include "shell.h"
-#include <unistd.h>
 
 /**
  * exec_builtins - Executes the shell command commands.
@@ -45,7 +44,7 @@ if (!full_path)
 {
 	perror(filename);
 	free_tokens(commands, num_tokens);
-	free(full_path)
+	free(full_path);
 	return (1);
 }
 
@@ -66,5 +65,6 @@ else
 	free_tokens(commands, num_tokens);
 	free(full_path);
 }
+return (0);
 }
 
