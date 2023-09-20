@@ -17,7 +17,7 @@ char **parse_tokens(char *command, int *num_tokens);
 void free_tokens(char **tokens, int *num_tokens);
 int token_count(const char *commands);
 int execute_cmd(char **commands, char *filename,
-                int *num_tokens, char *buffer);
+int *num_tokens, char *buffer);
 
 
 /* paths and env */
@@ -34,7 +34,7 @@ int _strncmp(const char *str1, const char *str2, size_t n);
 int _strcmp(const char *str1, const char *str2);
 char *_strdup(const char *str);
 unsigned int _strlen(const char *s);
-char* _strcpy(char* destination, const char* source);
+char *_strcpy(char *destination, const char *source);
 char *_strcat(char *dest, const char *src);
 
 #endif
